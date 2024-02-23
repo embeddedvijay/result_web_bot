@@ -83,10 +83,11 @@ WSGI_APPLICATION = 'smart_matka.wsgi.application'
 
 import dj_database_url
 DATABASES = {
-    'default':
-
-            dj_database_url.parse('postgres://smart_matka_user:VEStFLyHoTNGivFqqb9BlTNdlPImHzTE@dpg-cncd8cmd3nmc738fh130-a/smart_matka'),
-            #'PASSWORD': 'VEStFLyHoTNGivFqqb9BlTNdlPImHzTE',
+    'default': dj_database_url.config(
+        # Replace this value with your local database's connection string.
+        default='postgres://smart_matka_user:VEStFLyHoTNGivFqqb9BlTNdlPImHzTE@dpg-cncd8cmd3nmc738fh130-a/smart_matka',
+        conn_max_age=600
+    )
 }
 
 # Password validation
