@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Button</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color:#1AA05F;
+        }
+        
+        .menu-container {
+            display: flex;
+            height: 100vh;
+        }
+        
+        .menu-button {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .menu-items {
+            display: none;
+            flex-direction: column;
+            
+            top: 60px;
+            left: 0;
+            background-color: #333;
+            width: 17%;
+        }
+        
+        .menu-items a {
+            padding: 50px5px;
+            flex-direction: column;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+        }
+        
+        #menu-toggle:checked + .menu-button + .menu-items {
+            display: flex;
+        }
+        
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-button">&#9776; Menu</label>
+
+        <div class="menu-items">
+            <a href="add_group_result">ADD GROUP RESULT</a><br>
+            <a href="add_personal_result">ADD PERSONAL RESULT</a><br>
+            <a href="configure_market_time">ADD MARKET TIME</a><br>
+        </div>
+
+        <div class="content">
+            <!-- Your page content goes here -->
+            <h1>Welcome to the Main Menu</h1>
+            <p>you can configure the data here</p>
+        </div>
+    </div>
+</body>
+</html>

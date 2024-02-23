@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Input Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color:#1AA05F;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>CHANGE MARKET TIME</h2>
+        <form method="post"  action='/update_market_time'>
+            {% csrf_token %} 
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">MARKET NAME</th>
+                        <th scope="col">OPEN TIME</th>
+                        <th scope="col">CLOSE TIME</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="SRIDEVI DAY" ></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="srdop"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="srdcl"></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="TIME BAZAR" ></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="tbop"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="tbcl"></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="MADHUR DAY" ></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="madop"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="madcl"></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="MILAN DAY"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="mldop"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="mldcl"></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="RAJDHANI DAY"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="rjdop"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="rjdcl"></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="SUPEREME DAY"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="spdop"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="spdcl"></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="KALYAN "></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="kldop"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="kldcl"></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="SRIDEVI NIGHT"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="srnop"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="srncl"></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="MADHUR NIGHT"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="manop"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="mancl"></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="SUPEREME NIGHT"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="supnop"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="supncl"></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="MILAN NIGHT"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="mlnop"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="mlncl"></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="KALYAN NIGHT"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="klnop"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="klncl"></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="RAJDHANI NIGHT"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="rjnop"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="rjncl"></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="MAIN BAZAR"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="mainop"></td>
+                        <td><input type="text" class="form-control" placeholder="XX:XX" name="maincl"></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+
+            </table>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

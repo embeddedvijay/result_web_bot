@@ -1,3 +1,33 @@
 from django.db import models
 
 # Create your models here.
+class market_time_update(models.Model):
+    sridevi_day_open = models.TimeField() 
+    sridevi_day_close = models.TimeField() 
+    time_bazar_open = models.TimeField() 
+    time_bazar_close = models.TimeField() 
+    madhur_day_open = models.TimeField() 
+    madhur_day_close = models.TimeField() 
+    milan_day_open = models.TimeField() 
+    milan_day_close = models.TimeField() 
+    rajdhani_day_open = models.TimeField() 
+    rajdhani_day_close = models.TimeField() 
+    superem_day_open = models.TimeField() 
+    superem_day_close = models.TimeField() 
+    kalyan_day_open = models.TimeField() 
+    kalyan_day_close = models.TimeField() 
+    
+    sridevi_night_open = models.TimeField() 
+    sridevi_night_close = models.TimeField() 
+    main_bazar_open = models.TimeField() 
+    main_bazar_close = models.TimeField() 
+    madhur_night_open = models.TimeField() 
+    madhur_night_close = models.TimeField() 
+    milan_night_open = models.TimeField() 
+    milan_night_close = models.TimeField() 
+    rajdhani_night_open = models.TimeField() 
+    rajdhani_night_close = models.TimeField() 
+    superem_night_open = models.TimeField() 
+    superem_night_close = models.TimeField() 
+    kalyan_night_open = models.TimeField() 
+    kalyan_night_close = models.TimeField()  

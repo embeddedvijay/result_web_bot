@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-p!=a4p*&vsiwz)-k*nrczk1)a-x&@zz&^=ywlvv8xbff2a_5u9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -74,13 +74,20 @@ WSGI_APPLICATION = 'smart_matka.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
+import dj_database_url
+DATABASES = {
+    'default':
+
+            dj_database_url.parse('postgres://smart_matka_user:VEStFLyHoTNGivFqqb9BlTNdlPImHzTE@dpg-cncd8cmd3nmc738fh130-a/smart_matka'),
+            'PASSWORD': 'VEStFLyHoTNGivFqqb9BlTNdlPImHzTE',
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
