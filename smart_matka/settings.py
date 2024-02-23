@@ -86,7 +86,7 @@ DATABASES = {
     'default':
 
             dj_database_url.parse('postgres://smart_matka_user:VEStFLyHoTNGivFqqb9BlTNdlPImHzTE@dpg-cncd8cmd3nmc738fh130-a/smart_matka'),
-            'PASSWORD': 'VEStFLyHoTNGivFqqb9BlTNdlPImHzTE',
+            #'PASSWORD': 'VEStFLyHoTNGivFqqb9BlTNdlPImHzTE',
 }
 
 # Password validation
